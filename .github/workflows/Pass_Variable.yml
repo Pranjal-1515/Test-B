@@ -1,0 +1,16 @@
+name: Print Name
+
+on:
+  workflow_call:
+    outputs:
+      name:
+        description: "get the value of name"
+        value: ${{ vars.name }}
+
+jobs:
+  print:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Name Value
+        run: |
+           echo "The name value is: getting Stored"
