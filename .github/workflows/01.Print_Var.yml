@@ -1,0 +1,8 @@
+name: Trigger Shared Workflow
+
+on:
+  workflow_dispatch:
+
+jobs:
+  call-shared:
+    uses: Pranjal-1515/Test-Shared/.github/workflows/01.Shared.yml@main
